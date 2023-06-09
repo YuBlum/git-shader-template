@@ -4,7 +4,7 @@ LIBS=-lm -lglfw -lGL
 FLAGS=-Wall -Wextra -Werror -I./glad/include/
 CFILES=./glad/src/glad.c main.c
 
-.PHONY: all clean
+.PHONY: all clean run
 
 all: $(EXE)
 
@@ -13,3 +13,6 @@ $(EXE): main.c
 
 clean:
 	rm $(EXE)
+
+run:
+	./$(EXE)
